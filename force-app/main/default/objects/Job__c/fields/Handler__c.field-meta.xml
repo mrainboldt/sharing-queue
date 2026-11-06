@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Handler__c</fullName>
+    <description>Apex class this catalog step runs. Picklist API name without underscores must match a SharingQueueHandler subclass. Processor__c chooses Queueable vs Batch.</description>
+    <label>Handler</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OCC_Share_Matter</fullName>
+                <default>false</default>
+                <label>OCC - Share Matter</label>
+            </value>
+            <value>
+                <fullName>OCC_Share_Related_To_All_Legal_Team_Members</fullName>
+                <default>false</default>
+                <label>OCC - Share Related To All Legal Team Members</label>
+            </value>
+            <value>
+                <fullName>OCC_Share_All_Related_To_Team_Member</fullName>
+                <default>false</default>
+                <label>OCC - Share All Related To Legal Team Member</label>
+            </value>
+            <value>
+                <fullName>OCC_Reconcile_Matter</fullName>
+                <default>false</default>
+                <label>OCC - Reconcile Matter</label>
+            </value>
+            <value>
+                <fullName>RelatedRecordCreated</fullName>
+                <default>false</default>
+                <label>RelatedRecordCreated</label>
+            </value>
+            <value>
+                <fullName>ShareAllRelatedToTeamMember</fullName>
+                <default>false</default>
+                <label>ShareAllRelatedToTeamMember</label>
+            </value>
+            <value>
+                <fullName>ShareMainDirect</fullName>
+                <default>false</default>
+                <label>ShareMainDirect</label>
+            </value>
+            <value>
+                <fullName>ShareRelatedToAllTeamMembers</fullName>
+                <default>false</default>
+                <label>ShareRelatedToAllTeamMembers</label>
+            </value>
+            <value>
+                <fullName>ShareMainToTeamMembers</fullName>
+                <default>false</default>
+                <label>ShareMainToTeamMembers</label>
+            </value>
+            <value>
+                <fullName>ReconcileMain</fullName>
+                <default>false</default>
+                <label>ReconcileMain</label>
+            </value>
+            <value>
+                <fullName>OCC: Share Matter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OCC: Share Matter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

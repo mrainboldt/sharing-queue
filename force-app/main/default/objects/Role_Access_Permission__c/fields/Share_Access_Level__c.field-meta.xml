@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Share_Access_Level__c</fullName>
+    <description>Salesforce share AccessLevel: Read, Edit, or All. Leave blank to copy the Team Member access field (must be Read, Edit, or All).</description>
+    <externalId>false</externalId>
+    <label>Share Access Level</label>
+    <length>20</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

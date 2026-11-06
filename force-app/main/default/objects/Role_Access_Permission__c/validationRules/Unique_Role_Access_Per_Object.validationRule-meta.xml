@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_Role_Access_Per_Object</fullName>
+    <active>true</active>
+    <description>Enforced via unique index on the combination — one rule per role + access level per object.</description>
+    <errorConditionFormula>false</errorConditionFormula>
+    <errorMessage>Duplicate rule — a permission for this Role / Access Level / Object already exists.</errorMessage>
+</ValidationRule>

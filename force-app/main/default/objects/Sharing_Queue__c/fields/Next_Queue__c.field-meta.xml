@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Queue__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Instance copy of catalog Next_Job__c for this Main/Source chain.</description>
+    <label>Next Queue</label>
+    <referenceTo>Sharing_Queue__c</referenceTo>
+    <relationshipLabel>Previous Queues</relationshipLabel>
+    <relationshipName>PreviousQueues</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Field_Api_Name__c</fullName>
+    <description>API name of the lookup on the Team Member object holding a User Id. Optional if Group Field API Name is set; a row uses User when populated, otherwise Group.</description>
+    <externalId>false</externalId>
+    <label>User Field API Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

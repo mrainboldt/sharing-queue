@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOQL_Queries_Over_Warning__c</fullName>
+    <description>True when SOQL Queries % is at or above this Job&apos;s SOQL Queries Warning %.</description>
+    <formula>AND(
+  SOQL_Queries_Limit__c &gt; 0,
+  NOT(ISBLANK(Job__r.SOQL_Queries_Warning_Pct__c)),
+  (SOQL_Queries_Used__c / SOQL_Queries_Limit__c) &gt;= Job__r.SOQL_Queries_Warning_Pct__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SOQL Queries Over Warning</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DML_Rows_Pct__c</fullName>
+    <description>DML rows used divided by the Apex DML row limit for this execution.</description>
+    <formula>IF(DML_Rows_Limit__c &gt; 0, DML_Rows_Used__c / DML_Rows_Limit__c, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DML Rows %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

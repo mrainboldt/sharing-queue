@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Org-wide compaction thresholds for Sharing_Queue__c. Edit the Default record. A field value of 0 disables that rule; blank uses the packaged default.</description>
+    <label>Sharing Queue Setting</label>
+    <pluralLabel>Sharing Queue Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

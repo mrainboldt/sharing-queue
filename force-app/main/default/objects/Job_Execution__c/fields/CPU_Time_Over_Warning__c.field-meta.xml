@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPU_Time_Over_Warning__c</fullName>
+    <description>True when CPU Time % is at or above this Job&apos;s CPU Time Warning %.</description>
+    <formula>AND(
+  CPU_Time_Limit__c &gt; 0,
+  NOT(ISBLANK(Job__r.CPU_Time_Warning_Pct__c)),
+  (CPU_Time_Used__c / CPU_Time_Limit__c) &gt;= Job__r.CPU_Time_Warning_Pct__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CPU Time Over Warning</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

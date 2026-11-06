@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Access_Level_Value__c</fullName>
+    <description>Team Member access picklist value this row matches. Blank matches any access for the role (share level then comes from Share Access Level or the Team Member).</description>
+    <externalId>false</externalId>
+    <label>Access Level Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

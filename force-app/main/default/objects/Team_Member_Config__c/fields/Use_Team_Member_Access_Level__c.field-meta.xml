@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Team_Member_Access_Level__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When checked, Role Access Permission is skipped for every Sharing Object Config in this Application (including filtered slices). Every Team Member share uses the Team Member access field (Read/Edit/All). When unchecked, RAP gates who gets a share; blank RAP Share Access Level copies the Team Member field.</description>
+    <label>Use Team Member Access Level</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

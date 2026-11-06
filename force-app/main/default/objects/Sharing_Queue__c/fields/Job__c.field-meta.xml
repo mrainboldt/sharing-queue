@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Catalog step this instance runs. Blank on insert (event row); expander stamps the mapped head Job.</description>
+    <label>Job</label>
+    <referenceTo>Job__c</referenceTo>
+    <relationshipLabel>Sharing Queues</relationshipLabel>
+    <relationshipName>SharingQueues</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

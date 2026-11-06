@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Queue_Not_Self</fullName>
+    <active>false</active>
+    <errorConditionFormula>Next_Queue__c = Id</errorConditionFormula>
+    <errorDisplayField>Next_Queue__c</errorDisplayField>
+    <errorMessage>Next Queue cannot point to this record.</errorMessage>
+</ValidationRule>

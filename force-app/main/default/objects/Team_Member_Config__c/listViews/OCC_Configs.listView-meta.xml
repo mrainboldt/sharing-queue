@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OCC_Configs</fullName>
+    <columns>NAME</columns>
+    <columns>Is_Active__c</columns>
+    <columns>Team_Member_Object_Api_Name__c</columns>
+    <columns>Use_Team_Member_Access_Level__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Application__c</field>
+        <operation>equals</operation>
+        <value>CT,GLS,OCC</value>
+    </filters>
+    <label>OCC Configs</label>
+</ListView>

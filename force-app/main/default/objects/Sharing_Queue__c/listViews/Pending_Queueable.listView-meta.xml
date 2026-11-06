@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Queueable</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Trigger_Event__c</columns>
+    <columns>Job__c</columns>
+    <columns>Main_Record_Id__c</columns>
+    <columns>Source_Record_Id__c</columns>
+    <columns>Next_Queue__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pending</value>
+    </filters>
+    <filters>
+        <field>Job__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Pending</label>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Query_Rows_Over_Warning__c</fullName>
+    <description>True when Query Rows % is at or above this Job&apos;s Query Rows Warning %.</description>
+    <formula>AND(
+  Query_Rows_Limit__c &gt; 0,
+  NOT(ISBLANK(Job__r.Query_Rows_Warning_Pct__c)),
+  (Query_Rows_Used__c / Query_Rows_Limit__c) &gt;= Job__r.Query_Rows_Warning_Pct__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Query Rows Over Warning</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

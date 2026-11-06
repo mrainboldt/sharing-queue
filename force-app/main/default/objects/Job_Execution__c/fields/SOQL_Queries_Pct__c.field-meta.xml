@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOQL_Queries_Pct__c</fullName>
+    <description>SOQL queries used divided by the Apex SOQL query limit for this execution.</description>
+    <formula>IF(SOQL_Queries_Limit__c &gt; 0, SOQL_Queries_Used__c / SOQL_Queries_Limit__c, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SOQL Queries %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>
